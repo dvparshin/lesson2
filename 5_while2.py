@@ -23,9 +23,9 @@ questions_and_answers = {
 def ask_user(answers_dict):
     while True:
       user_answers = input("Пользователь: ")
-      for key, value in answers_dict.items():
+      for key in answers_dict.keys():
           if user_answers.lower().strip() == key.lower().strip():
-            print(f"Программа: {value}")
+            print(f"Программа: {questions_and_answers[key]}")
 
 
 if __name__ == "__main__":
