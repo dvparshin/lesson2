@@ -14,18 +14,19 @@
     Программа: Программирую
     
 """
-
 questions_and_answers = {
     'Как дела?': 'Хорошо!',
     'Что делаешь?': 'Программирую',
 }
 
-def ask_user(answers_dict):
+def ask_user(questions_and_answers):
     while True:
-      user_answers = input("Пользователь: ")
-      for key in answers_dict.keys():
-          if user_answers.lower().strip() == key.lower().strip():
-            print(f"Программа: {questions_and_answers[key]}")
+        user_answers = input("Пользователь: ")
+        if user_answers in questions_and_answers:
+            print(f"Программа: {questions_and_answers[user_answers]}")
+        else:
+            print("Такой вопрос я не понимаю")
+            break
 
 
 if __name__ == "__main__":
