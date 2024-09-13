@@ -18,7 +18,7 @@ def determine_age(age):
         return "В этом возрасте еще/уже не работают"
     elif age >=0 and age <=6:
         return "Пользователь должен учиться в детском саду"
-    elif age >=7 and age <= 17:
+    elif age >=7 and age <= 16:
         return "Пользователь должен учиться в школе"
     elif age >=17 and age <= 23:
         return "Пользователь должен учиться в ВУЗе"
